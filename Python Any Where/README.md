@@ -22,19 +22,25 @@
  2. Clone your repository on pythonanywhere bash . 
  3. Create a virtualenv on pythonanywhere . 
 > create     : `mkvirtualenv --python=python3.8 (your env name)`
+
 > remove   : `rmvirtualenv (your env name)`
+
 > active     :  `workon (your env name)`
+
 > deactive : `deactivate`
 
  4. Install Libraries .
-> bash : `pip install -r requirements.txt`
+ > bash : `pip install -r requirements.txt`
  5. Create web app in **Manual configuration** mod
  6. set **source code** , **virtualenv** and **staticfiles url** .
  > source code : `/home/(Account-name)/(project-name)`
-> virtualenv : `/home/(Account-name)/.virtualenvs/(venv-name)`
-> staticfiles url :  `url:/staticfiles   path:/home/(Account-name)/(project-name)/staticfiles`
+ 
+ > virtualenv : `/home/(Account-name)/.virtualenvs/(venv-name)`
+ 
+ > staticfiles url :  `url:/staticfiles   path:/home/(Account-name)/(project-name)/staticfiles`
  8. WSGI confguration file (see in wsgi.py).
-> clear : `just keep a django part`
-> change :  `change path and os.environ`
+ > clear : `just keep a django part`
+ 
+ > change :  `change path and os.environ`
  10. Change a path url in setting.py.
-> note :  `we cant use a os.path in setting.py so we should cjange it (see a setting.py)`
+ > note :  `we cant use a os.path in setting.py so we should cjange it (see a setting.py)`
