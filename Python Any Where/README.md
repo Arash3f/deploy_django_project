@@ -2,6 +2,7 @@
 
 
 **PythonAnywhere** is an online integrated development environment (IDE) and web hosting service based on the Python programming language . Founded by Giles Thomas and Robert Smithson in 2012, it provides in-browser access to server-based Python and Bash command-line interfaces , along with a code editor with syntax highlighting . Program files can be transferred to and from the service using the user's browser. Web applications hosted by the service can be written using any WSGI-based application framework.
+
 [wikipedia](https://en.wikipedia.org/wiki/PythonAnywhere)
 
 
@@ -31,16 +32,16 @@
 
  4. Install Libraries .
  > bash : `pip install -r requirements.txt`
- 5. Create web app in **Manual configuration** mod
+ 5. Create web app in **Manual configuration** mode
  6. set **source code** , **virtualenv** and **staticfiles url** .
  > source code : `/home/(Account-name)/(project-name)`
  
  > virtualenv : `/home/(Account-name)/.virtualenvs/(venv-name)`
  
  > staticfiles url :  `url:/staticfiles   path:/home/(Account-name)/(project-name)/staticfiles`
- 8. WSGI confguration file (see in wsgi.py).
+ 8. WSGI confguration file ([see](https://github.com/Arash3f/deploy_django_project/blob/main/Python%20Any%20Where/%20wsgi.py)).
  > clear : `just keep a django part`
  
  > change :  `change path and os.environ`
- 10. Change a path url in setting.py.
- > note :  `we cant use a os.path in setting.py so we should cjange it (see a setting.py)`
+ 10. Change a path url in setting.py ([see](https://github.com/Arash3f/deploy_django_project/blob/main/Python%20Any%20Where/setting.py)).
+ > note :  `we cant use a os.path in setting.py so we should change it`
