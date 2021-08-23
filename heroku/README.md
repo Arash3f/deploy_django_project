@@ -27,16 +27,25 @@ Heroku was initially developed by James Lindenbaum, Adam Wiggins, and Orion Henr
 4. `pip freeze > requirements.txt`
 5. Create runtime.txt for set python version 
 6. Create Procfile : `web: gunicorn (APP name).wsgi --log-file -`
-7. Change setting.py (see on file)
-8. Git init . 
+7. Change setting.py ([see](https://github.com/Arash3f/deploy_django_project/blob/main/heroku/setting.py))
+8. `git init `
 9. login heroku :  `heroku login`
 10. create app :  `heroku apps:create (app name)`
 11. push project :  `git push heroku master`
 
+## Additional
+- rename app :
+
  `heroku apps:rename --app (old-name) (new-name)`
  
+- app ps :
+
  `heroku ps -a (app name)`
  
+- open app :
+
  `heroku open -a (app name)`
+ 
+ - run bash :
  
  `heroku run bash`
